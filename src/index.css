@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'Steinbeck';
+  src: url('./fonts/SteinbeckFC-Reg.woff2') format('woff2'),
+      url('./fonts/SteinbeckFC-Reg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Steinbeck';
+  src: url('./fonts/SteinbeckFC-Gras.woff2') format('woff2'),
+      url('./fonts/SteinbeckFC-Gras.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  font-family: 'Steinbeck', sans-serif;
+  font-family: serif;
+  background-color: #191919;
+  overflow-x: hidden;
+  height: 100vh;
+}
+

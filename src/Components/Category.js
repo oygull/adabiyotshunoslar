@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import Autors from './Autors';
 
+
 function Category({data}) {
   
   const[objArr, setObjArr]=useState(data);
   const[newArr, setNewArr]=useState([]);
 
   useEffect(() => {
-    setNewArr(objArr)
-  })
+    allFunc()
+  },[])
   const allFunc=()=>{
     setNewArr(objArr)
   }

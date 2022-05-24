@@ -56,6 +56,9 @@
   align-items: center;
   justify-content: center;
 }
+.category{
+  margin-top: 50px;
+}
 .search__input{
   width: 700px;
   height: 50px;
@@ -157,4 +160,96 @@
 }
 .author__par-r{
   margin-right: 34px;
+}
+.author__inner{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.inner__desc{
+  width: 50%;
+}
+.author__img{
+  width: 40%;
+  height: 500px;
+}
+.author__title{
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 53px;
+  margin-bottom: 20px;
+  color: #C9AC8C;
+  font-family: 'Steinbeck';
+}
+.author__text{
+  line-height: 144.4%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+}
+.list__link{
+  text-decoration: none;
+}
+.sign{
+  display: flex;
+  margin-top: -100px;
+  height: 101vh;
+}
+.sign__imgbox{
+  width: 50%;
+  background-color: #c8ac8c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign__desc{
+  background-color: #fff;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sign__title{
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 51px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.sign__text{
+  font-size: 13px;
+  line-height: 15px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.sign__input{
+  width: 330px;
+  height: 46px;
+  border: 1px solid #b4b4bb;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #aaa;
+  margin-bottom: 17px;
+  outline: none;
+  padding: 0 12px;
+}
+.sign__btn{
+  width: 330px;
+  height: 46px;
+  cursor: pointer;
+  border: none;
+  background-color: #152540;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+  color: #fff;
+  margin: 17px 0;
+  border-radius: 99px;
+}
+.sign__form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

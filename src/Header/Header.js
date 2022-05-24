@@ -19,10 +19,10 @@ function Header() {
             <Link className='nav__item' to="/forum">Forum</Link>
           </ul>
         </nav>
-        <div className='header__btns'>
+        <Link className='header__btns' to="/signin">
           <img className='header__img' src={headerImg} />
           <button className='header-btn'><i className='bx bx-chevron-down'></i></button>
-        </div>
+        </Link>
       </div>
      </div>
    </header>

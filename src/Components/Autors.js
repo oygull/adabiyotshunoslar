@@ -6,7 +6,7 @@ import headphones from '../images/headphones.png'
 
 function Autors({el,i}) {
   return (
-    <Link to={`EachAthor/${el.id}`}>
+    <Link className='list__link' to={`/eachauthor/${el.id}`}>
       <li key={i}  className='authors__item'>
             <div className='imgbox'>
               <img src={el.img}/>

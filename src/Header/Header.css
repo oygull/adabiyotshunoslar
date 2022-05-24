@@ -13,7 +13,7 @@
   font-weight: 300;
   margin-right: 43px;
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
 }
 .header__btns{
   display: flex;

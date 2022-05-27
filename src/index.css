@@ -20,6 +20,15 @@ code {
   font-display: swap;
 }
 
+   
+@font-face {
+  font-family: 'Rotterburg Stylish FREE';
+  src: url('./fonts/RotterburgStylishFREE-Regular.woff2') format('woff2'),
+      url('./fonts/RotterburgStylishFREE-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Steinbeck';

@@ -17,7 +17,10 @@
   overflow-x: scroll;
 
 }
-
+.header__img{
+  width: 50px;
+  height: 50px;
+}
 .slider-btns{
   position: absolute;
   display: flex;
@@ -57,7 +60,7 @@
   justify-content: center;
 }
 .category{
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .search__input{
   width: 700px;
@@ -120,8 +123,12 @@
 .imgbox{
   overflow: hidden;
   border-radius: 15px;
+  width: 100%;
+  height: 180px;
 }
 .imgbox img{
+  width: 100%;
+  height: 100%;
   transition: all 0.4s ease;
 }
 .authors__item:hover .imgbox img{
@@ -168,7 +175,7 @@
   padding: 20px;
 }
 .inner__desc{
-  width: 50%;
+  width: 55%;
 }
 .author__img{
   width: 40%;
@@ -252,4 +259,169 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.books{
+  margin-top: 30px;
+}
+.books__title{
+  font-size: 40px;
+  line-height: 34px;
+  color: #C9AC8C;
+  font-family: 'Steinbeck';
+  margin-bottom: 30px;
+}
+.book__img{
+  width: 160px;
+  height: 220px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.books__list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.book__item{
+ margin-right: 15px;
+}
+.book__name{
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: #C9AC8C;
+}
+.book__div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.asarlar__inner{
+  display: flex;
+  margin-top: 30px;
+}
+.asarlar__imgbox{
+  width: 40%;
+}
+.asarlar__imgbox img{
+  width: 100%;
+  height: 100%;
+}
+.asarlar__desc{
+  width: 55%;
+  padding: 20px 40px;
+}
+.asar__title{
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 53px;
+  color: #C9AC8C;
+  margin-bottom: 14px;
+}
+.book-author{
+  color: #C9AC8C;
+  margin-bottom: 40px;
+}
+.asarlar__par{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 20px;
+}
+.asarlar__par span{
+  margin-left: 6px;
+  color: #fff;
+}
+.asarlar__text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144.4%;
+  color: rgba(255, 255, 255, 0.8);
+}
+.profile__img{
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-bottom: 30px;
+}
+.profile__header{
+  display: flex;
+  margin-top: 30px;
+}
+.profile__imgbox{
+  margin-right: 60px;
+}
+.profile__p{
+  font-family: 'Steinbeck';
+  font-size: 22px;
+  line-height: 144.4%;
+  color: #C9AC8C;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.profile__par{
+  text-align: center;
+  font-family: 'Steinbeck';
+}
+.profile__title{
+  font-family: 'Steinbeck';
+  font-size: 32px;
+  line-height: 144.4%;
+  color: #C9AC8C;
+  margin-bottom: 10px;
+}
+.profile__text{
+  font-family: 'Steinbeck';
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+.profile__text span{
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 15px;
+}
+.category__heading{
+  font-family: 'Rotterburg Stylish FREE';
+  font-size: 31px;
+  line-height: 34px;
+  color: #C9AC8C;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.books__item{
+  margin-top: 20px;
+  width: 250px;
+}
+.dropdown{
+  border-radius: 6px;
+}
+.header__btns{
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #fff;
+}
+.header__part{
+  display: flex;
+  align-items: center;
+}
+.edit__header{
+  margin-top: 30px;
+  display: flex;
+}
+.add-btn{
+  cursor: pointer;
+  padding: 16px 32px;
+  background: #C9AC8C;
+  border: none;
+  margin: 30px 20px;
+}
+.book__tilte{
+  margin-top: 30px;
+  font-size: 30px;
+}
+.saved__list{
+  list-style: none;
 }

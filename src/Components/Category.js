@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import Autors from './Autors';
 
 
-function Category({data}) {
+function Category({setNewArr,newArr,objArr}) {
   
-  const[objArr, setObjArr]=useState(data);
-  const[newArr, setNewArr]=useState([]);
+
 
   useEffect(() => {
     allFunc()
@@ -13,27 +12,28 @@ function Category({data}) {
   const allFunc=()=>{
     setNewArr(objArr)
   }
-  const temuriyFunc=()=>{
-    setNewArr(objArr.filter(el=>el.genre==='temuriy'))
-  }
   const jadidFunc=()=>{
-    setNewArr(objArr.filter(el=>el.genre==='jadid'))
+    setNewArr(objArr.filter(el=>el.genre==='Diniy'))
+  }
+  const temuriyFunc=()=>{
+    setNewArr(objArr.filter(el=>el.genre==='jahon'))
   }
   const sovetFunc=()=>{
-    setNewArr(objArr.filter(el=>el.genre==='sovet'))
+    setNewArr(objArr.filter(el=>el.genre==='biznes'))
   }
-  const mustaqillukFunc=()=>{
-    setNewArr(objArr.filter(el=>el.genre==='mustaqillik'))
+  const myFunc3=()=>{
+    setNewArr(objArr.filter(el=>el.genre==="o'zbek"))
   }
 
   return (
     <div className='category'>
+      <h1 className='category__heading'>Asosiy kategoriyalar</h1>
         <div className='category-box'>
           <button onClick={allFunc} autoFocus className='category-btn'>All</button>
-          <button onClick={temuriyFunc} className='category-btn'>Temuriylar davri </button>
-          <button onClick={jadidFunc} className='category-btn'>Jadid adabiyoti </button>
-          <button onClick={sovetFunc} className='category-btn'>Sovet adabiyoti </button>
-          <button onClick={mustaqillukFunc} className='category-btn'>Mustaqillik davri</button>
+          <button onClick={jadidFunc} className='category-btn'>Diniy </button>
+          <button onClick={temuriyFunc} className='category-btn'>Jahon </button>
+          <button onClick={sovetFunc} className='category-btn'>Biznes</button>
+          <button onClick={myFunc3} className='category-btn'>O'zbek</button>
         </div>
         <div className='autors'>
           <div className='container'>

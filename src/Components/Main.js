@@ -1,15 +1,19 @@
-import React from 'react'
 import Search from './Search'
 import Category from './Category'
-import data from '../Data'
 import Slider from './Slider'
+import React, {useState } from 'react'
+import data from '../Data'
 
 function Main() {
+
+  const[objArr, setObjArr]=useState(data);
+  const[newArr, setNewArr]=useState([]);
+
   return (
     <div>
        <Slider/>
-      <Search/>
-      <Category data={data}/>
+      <Search setNewArr={setNewArr}/>
+      <Category setNewArr={setNewArr} newArr={newArr} objArr={objArr}/>
     </div>
   )
 }

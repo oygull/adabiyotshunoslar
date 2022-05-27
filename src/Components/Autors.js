@@ -12,7 +12,7 @@ function Autors({el,i}) {
               <img src={el.img}/>
             </div>
             <div className='authors__desc'>
-              <h3 className='authors-title'>{el.name}</h3>
+              <h3 className='authors-title'>{el.name} {el.lastName}</h3>
               <p className='author__year'>{el.born}-{el.died}</p>
               <div className='desc__inner'>
                 <p className='author__par author__par-r'> <img className='author__icon' src={book}/> {el.books}</p>
